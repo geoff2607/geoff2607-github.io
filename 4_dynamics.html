@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+    <title>Dynamics</title>
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body>
+    <!-- Site navigation menu -->
+    <ul class="navbar">
+      <li><a href="index.html">Do you see?</a> </li>
+      <li><a href="2_cause_&amp;_effect.html">Cause and Effect</a> </li>
+      <li><a href="3_causal_algebra.html">Algebraic Solutions</a> </li>
+      <li><a href="4_dynamics.html">Dynamics</a> </li>
+      <li><a href="5_causality_reversal.html">Causality Reversal</a> </li>
+      <li><a href="6_flowgraph_modelling.html">Computer Modelling</a> </li>
+      <li><a href="7_book.html">Book</a> </li>
+    </ul>
+    <!-- Main content -->
+    <h1>Dynamics in Causal Graphs</h1>
+    <p> Macroeconomic models which deal with the accumulation of flows
+      into stocks or with expectations about the future are inherently
+      dynamic: they involve differential or difference equations. They
+      are incorporated into a causal graph via an operator: the Laplace
+      operator for continuous time or the lag operator for discrete
+      time. Economic models are usually expressed in discrete time. Then
+      the lag operator L is treated as an algebraic parameter and enters
+      into the transmittances. </p>
+    <p> Consider a Phillips curve model as set out in these equations:</p>
+    <p> <img src="4_files/Phillips.gif" alt="graph of Phillips curve
+        model" align="right"> <i>&#960; = &#960;<sup>e</sup> + e(y <tt>-</tt>
+        y*) </i></p>
+    <p><i> y = a<sub>0</sub> <tt>-</tt> a(i <tt>-</tt> &#960;<sup>e</sup> )
+      </i></p>
+    <p><i> &#960;<sup>e</sup> = </i>L<i>&#960; </i></p>
+    <p><i> i = b<sub>1</sub>y <tt>-</tt> b<sub>2 </sub> </i>L<i>(m <tt>-</tt>
+        p) </i></p>
+    <p><i> m = </i>L<i>m + &#956;</i> </p>
+    <p> where <i>p</i> is the price level, &#960;<sup>e</sup> is the
+      expected rate of inflation, <i>y</i> is output, <i>y*</i> is the
+      natural level of output, <i>i</i> is the nominal interest rate, <i>m</i>
+      is the stock of money and &#956; is its rate of growth. Variables <i>p,
+        y, y*</i> and <i>m</i> are measured in logarithms. Both <i>m</i>
+      and <i>p</i> are measured at the end of the period. The lag
+      operator L simply lags the variable it is attached to, so L<i>m</i>
+      is <i>m</i><sub>t-1</sub>; where it appears in the form (1-L)<sup>-1</sup>
+      it implies accumulation or time integration. </p>
+    <p> This simple model assumes that expected inflation is equal to
+      the actual inflation rate in the previous period. It assumes &#956; and
+      <i>y*</i> to be exogenous and we can ask <i>e.g.</i> how a (unit
+      step) increase in &#956; or <i>y*</i> would affect any of the other,
+      endogenous, variables. </p>
+    <p> Although there is sufficient information in this model to work
+      out the full time path of effects, in fact the main ones of
+      interest are "impact" or short-run effects and long-run effects.
+      When we have the required transmittance as a function of L then
+      the former are given by setting L = 0 and the latter by setting L
+      = 1. </p>
+    <p> </p>
+    <p> The flowgraph has four loops and one pair of non-touching loops,
+      so the system determinant is:<br>
+      &#8710; = (1 - L)(1 + <i>ab</i><sub>1</sub>) - <i>ae</i>L(1 - <i>b</i><sub>2</sub>/(1
+
+      - L)) <br>
+      and to illustrate the application of Mason's rule to find short-
+      and long-run transmittances we consider two examples, namely the
+      transmittance from a step increase in natural output <i>y*</i> to
+      actual output <i>y</i>, and from a step increase in the growth
+      rate of the money stock &#956; to the level of real balances <i>m-p</i>.
+      Mason's rule gives a general formula which involves the lag
+      operator L, and this is the "transfer function" (indicated by the
+      angle brackets below). From this we find the the short-run effects
+      by setting L = 0 and the long-run effects by setting L = 1: <br>
+      <img src="4_files/equations.gif" alt="transmittances from y* and
+        mu to y and m-p" align="left"> </p>
+    <p> An increase in the natural level of output <i>y*</i> impinges
+      on the other variables in this model via a reduced rate of
+      inflation. This in turn has two offsetting effects: (i) expected
+      inflation falls, which increases the real interest rate and
+      thereby reduces output; and (ii) real balances rise as inflation
+      is now less than the growth of the money stock, and this reduces
+      the real interest rate, thereby stimulating output. Output is only
+      affected from either route with a one-period delay, so there is no
+      impact effect on <i>y</i>. Thereafter both of the offsetting
+      effects come into play, but the second effect dominates in the
+      long run because it is a dynamic process which only comes to an
+      end when output has increased to the new natural level and there
+      is no further supply side attenuation of inflation. All this can
+      be seen in the flowgraph, and it is confirmed in the algebra. </p>
+    <p> An increase in the money growth rate <em>initially increases</em>
+      real balances as might be expected, but eventually, after the
+      inflationary process thus engendered has come to a new equilibrium
+      with inflation proceeding at the same rate as money growth, the
+      level of real balances will have <em>fallen</em>—by an amount
+      equal to the interest semi-elasticity of the demand for money, 1/<i>b<sub>2</sub></i>.
+    </p>
+    <p> Despite this model's rudimentary assumption about expectations,
+      it confirms the basic results of "expectations adjusted Phillips
+      curve models". </p>
+    <p> </p>
+    <h5> © 2005 by Geoffrey J. Wyatt </h5>
+  </body>
+</html>
