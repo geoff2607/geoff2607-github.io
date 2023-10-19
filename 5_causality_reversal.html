@@ -1,1 +1,41 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html><head>	<title>Causality reversal</title><link rel="stylesheet" href="mystyle.css"> </head><body><!-- Site navigation menu --><ul class="navbar">	<li><a href="index.html">Do you see?</a>	<li><a href="2_cause_&_effect.html">Cause and Effect</a> 	<li><a href="3_causal_algebra.html">Algebraic Solutions</a>	<li><a href="4_dynamics.html">Dynamics</a>	<li><a href="5_causality_reversal.html">Causality Reversal</a>	<li><a href="6_flowgraph_modelling.html">Computer Modelling</a>	<li><a href="7_book.html">Book</a></ul><!-- Main content --><h1>Causality reversal</h1><p>It is important to realize that a static model is not completely defined by its equations because its causal structure is still ambiguous without further assumptions about the roles of the variables, <i>i.e.</i> which are exogenous and which endogenous? Suppose we have a linear model with <i>M</i> equations and <i>N</i> variables, <i>N > M</i>. Then <i>N-M</i> of these variables must be exogenous while <i>M</i> are determined by the system and therefore endogenous. The key to a causal understanding of such a model is in the assignment of exogeneity. Many such assignments are possible, at least algebraically (though some may not make much sense), <i>i.e.</i> the number of ways that <i>N-M</i> variables can be chosen from <i>N</i> variables.<p><h3>Example: the IS model</h3><p>To keep it simple, consider just these three equations:<p><i>I = I<sub>0</sub> - b.r<br>C = a.Y<br>Y = C + I</i><p>This way of writing the model suggests (but does not imply) that the left hand side variables are endogenous, leaving <i>I<sub>0</sub></i> and <i> r </i>exogenous. This interpretation corresponds to the Keynesian (short run) simple multiplier model. But it is just as valid to assign <i>I<sub>0</sub></i> and <i> Y </i> as exogenous, which corresponds to the classical (long run) "loanable funds" interpretation of the same equations. The two models differ not in their equations but in their causal structures.<p><p><img src="IS_model.gif" alt="IS-LM diagraph" align="right">These graphs could be written down directly from the equations. But they can also be derived from each other by a graphical reversal of causality which involves: (i) selecting the exo/endogenous variables which will change roles; (ii) reversing a path between them, and inverting the individual path transmittances and (iii) moving the end-points of all paths that converge on the now-reversed path and changing their signs. It's easily accomplished on paper but the <a href="6_flowgraph_modelling.html">computer implementation</a> enables it too. <p>Note that, <i>inter alia</i>, an increase in autonomous investment <i>I<sub>0</sub></i> increases consumption in the Keynesian model but does not affect the rate of interest whereas in the classical model it increases the rate of interest but has no effect on consumption.<p><address></address><h5>&copy; 2004 by Geoffrey J. Wyatt </h5></body></html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+	<title>Causality reversal</title>
+<link rel="stylesheet" href="mystyle.css"> 
+</head>
+
+<body>
+
+<!-- Site navigation menu -->
+<ul class="navbar">
+	<li><a href="index.html">Do you see?</a>
+	<li><a href="2_cause_&_effect.html">Cause and Effect</a> 
+	<li><a href="3_causal_algebra.html">Algebraic Solutions</a>
+	<li><a href="4_dynamics.html">Dynamics</a>
+	<li><a href="5_causality_reversal.html">Causality Reversal</a>
+	<li><a href="6_flowgraph_modelling.html">Computer Modelling</a>
+	<li><a href="7_book.html">Book</a>
+</ul>
+
+<!-- Main content -->
+<h1>Causality reversal</h1>
+<p>It is important to realize that a static model is not completely defined by its equations because its causal structure is still ambiguous without further assumptions about the roles of the variables, <i>i.e.</i> which are exogenous and which endogenous? Suppose we have a linear model with <i>M</i> equations and <i>N</i> variables, <i>N > M</i>. Then <i>N-M</i> of these variables must be exogenous while <i>M</i> are determined by the system and therefore endogenous. The key to a causal understanding of such a model is in the assignment of exogeneity. Many such assignments are possible, at least algebraically (though some may not make much sense), <i>i.e.</i> the number of ways that <i>N-M</i> variables can be chosen from <i>N</i> variables.
+<p>
+<h3>Example: the IS model</h3>
+<p>To keep it simple, consider just these three equations:
+<p><i>I = I<sub>0</sub> - b.r
+<br>C = a.Y
+<br>Y = C + I</i>
+<p>This way of writing the model suggests (but does not imply) that the left hand side variables are endogenous, leaving <i>I<sub>0</sub></i> and <i> r </i>exogenous. This interpretation corresponds to the Keynesian (short run) simple multiplier model. But it is just as valid to assign <i>I<sub>0</sub></i> and <i> Y </i> as exogenous, which corresponds to the classical (long run) "loanable funds" interpretation of the same equations. The two models differ not in their equations but in their causal structures.
+<p>
+<p><img src="IS_model.gif" alt="IS-LM diagraph" align="right">
+These graphs could be written down directly from the equations. But they can also be derived from each other by a graphical reversal of causality which involves: (i) selecting the exo/endogenous variables which will change roles; (ii) reversing a path between them, and inverting the individual path transmittances and (iii) moving the end-points of all paths that converge on the now-reversed path and changing their signs. It's easily accomplished on paper but the <a href="6_flowgraph_modelling.html">computer implementation</a> enables it too. 
+<p>
+Note that, <i>inter alia</i>, an increase in autonomous investment <i>I<sub>0</sub></i> increases consumption in the Keynesian model but does not affect the rate of interest whereas in the classical model it increases the rate of interest but has no effect on consumption.
+<p>
+<address></address>
+<h5>&copy; 2004 by Geoffrey J. Wyatt </h5>
+
+</body>
+</html>
